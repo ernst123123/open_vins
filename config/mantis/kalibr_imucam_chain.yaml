@@ -1,0 +1,93 @@
+%YAML:1.0 # need to specify the file type at the top!
+
+cam0:
+  T_cam_imu:
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.055  # Adjusted translation in the X-axis
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.0175  # Adjusted translation in the Y-axis
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.035  # Adjusted translation in the Z-axis
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  cam_overlaps:
+    - 1
+  camera_model: pinhole
+  distortion_coeffs:
+    - 0
+    - 0
+    - 0
+    - 0
+  distortion_model: radtan
+  intrinsics:
+    - 619.759033203125
+    - 619.759033203125  
+    - 424.0
+    - 240.0
+  resolution:
+    - 848
+    - 480
+  rostopic: /camera/infra1/image_raw
+  timeshift_cam_imu: 0
+cam1:
+  T_cam_imu:
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.055  # Adjusted translation in the X-axis
+    - - 0.0
+      - 0.0
+      - 0.0
+      - -0.0325  # Adjusted translation in the Y-axis
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 0.035  # Adjusted translation in the Z-axis
+    - - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  T_cn_cnm1:
+    - - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 1
+      - 0
+    - - 0.0
+      - -0.05
+      - 0.0
+      - 1.0
+  cam_overlaps:
+    - 0
+  camera_model: pinhole
+  distortion_coeffs:
+    - 0
+    - 0
+    - 0
+    - 0  
+  distortion_model: radtan
+  intrinsics:
+    - 619.759033203125
+    - 619.759033203125  
+    - 424.0
+    - 240.0
+  resolution:
+    - 848
+    - 480
+  rostopic: /camera/infra2/image_raw
+  timeshift_cam_imu: 0
